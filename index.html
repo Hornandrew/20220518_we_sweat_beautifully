@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Потеем красиво</title>
+    <link rel="stylesheet" href="./css/index.min.css" />
+  </head>
+  <body onload="showContent('./news/index_news.html', 0)">
+    <header>
+      <div class="header__main">
+        <h1>
+          <div class="region">Красноярский клуб путешествий выходного дня</div>
+          <div class="sport">Потеем красиво</div>
+          <img src="./img/logo.webp" alt="" />
+        </h1>
+        <ul class="header__menu">
+          <li class="header__menu-item">
+            <a
+              href="#"
+              onclick="showContent('./news/index_news.html',0)"
+              class="header__menu-link active"
+              >Новости</a
+            >
+          </li>
+          <li class="header__menu-item">
+            <a
+              href="#"
+              onclick="showContent('./areas/index_areas.html', 1)"
+              class="header__menu-link"
+              >Районы</a
+            >
+            <ul class="header__submenu">
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">Гремячая грива</a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link"
+                  >Караульненское нагорье</a
+                >
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">Качинские столбы</a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">Красноярские столбы</a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">Мининские столбы</a>
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link"
+                  >Окрестности Дивногорска</a
+                >
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link"
+                  >Окрестности Красноярска</a
+                >
+              </li>
+              <li class="header__submenu-item">
+                <a href="#" class="header__submenu-link">Торгашинский хребет</a>
+              </li>
+            </ul>
+          </li>
+          <li class="header__menu-item">
+            <a
+              href="#"
+              onclick="showContent('./contacts/index_contacts.html', 2)"
+              class="header__menu-link"
+              >Контакты</a
+            >
+          </li>
+          <li class="header__menu-item">
+            <a
+              href="#"
+              onclick="showContent('./about/about.html', 3)"
+              class="header__menu-link"
+              >О проекте</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="header__slogan">
+        "Потеем красиво" - это девиз наших походов на 1-2 выходных дня.
+        Собираясь с нами, готовьтесь наслаждаться незабываемыми видами природных
+        красот Красноярского края и потными подьемами по склонам
+      </div>
+    </header>
+    <div class="side__main">
+      <aside class="side__left">
+        <ul class="side__left-menu">
+          <li class="side__left-menu-item">
+            <a
+              href="#"
+              onclick="showContent('./news/index_news.html',0)"
+              class="side__left-menu-link active"
+              >Новости</a
+            >
+          </li>
+          <li class="side__left-menu-item">
+            <a
+              href="#"
+              onclick="showContent('./areas/index_areas.html',1)"
+              class="side__left-menu-link"
+              >Районы</a
+            >
+          </li>
+          <li class="side__left-menu-item">
+            <a
+              href="#"
+              onclick="showContent('./contacts/index_contacts.html',2)"
+              class="side__left-menu-link"
+              >Контакты</a
+            >
+          </li>
+          <li class="side__left-menu-item">
+            <a
+              href="#"
+              onclick="showContent('./about/about.html',3)"
+              class="side__left-menu-link"
+              >О проекте</a
+            >
+          </li>
+        </ul>
+      </aside>
+      <main id="content"></main>
+      <div id="loading" style="display: none">Идет загрузка...</div>
+    </div>
+    <footer>
+      <div class="footer__glue"></div>
+    </footer>
+    <script src="./functions.js"></script>
+  </body>
+</html>
